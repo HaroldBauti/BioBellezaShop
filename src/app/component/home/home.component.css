@@ -1,7 +1,7 @@
 .hero-banner {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+    background: url('https://res.cloudinary.com/dl5qdefoi/image/upload/v1733132442/Diana/ypvhf7zqpu0folvwhffx.jpg') no-repeat center center;
     background-size: cover;
-    color: white;
+    color: black;
     text-align: center;
     padding: 100px 20px;
 }

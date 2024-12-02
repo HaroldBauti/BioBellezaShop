@@ -26,38 +26,18 @@
             <h2 class="text-center mb-4">Productos Destacados</h2>
             <div class="row g-4">
                 <!-- Product 1 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card product-card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 1">
+                <div class="col-md-4 col-sm-6" *ngFor="let item of products;let i=index">
+                    <div *ngIf="i<3" class="card product-card">
+                        
+                        <img [src]="item.img" class="card-img-top" alt="Producto 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Mascarilla Facial Orgánica</h5>
-                            <p class="card-text text-primary fw-bold">$18.00</p>
+                            <h5 class="card-title">{{item.nombre}}</h5>
+                            <p class="card-text text-primary fw-bold">S/. {{item.precio}}</p>
                             <a href="#" class="btn btn-success">Ver Producto</a>
                         </div>
                     </div>
                 </div>
-                <!-- Product 2 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card product-card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Sérum Hidratante Natural</h5>
-                            <p class="card-text text-primary fw-bold">$25.00</p>
-                            <a href="#" class="btn btn-success">Ver Producto</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card product-card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Champú Natural Reparador</h5>
-                            <p class="card-text text-primary fw-bold">$20.00</p>
-                            <a href="#" class="btn btn-success">Ver Producto</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
 
