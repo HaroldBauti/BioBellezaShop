@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+.bg-palo-rosa {
+    background-color: #FFD3C2; /* Palo rosa en hexadecimal */
+}
+.bg-palo-rosa-1 {
+    background-color: #FFD3C2; /* Palo rosa en hexadecimal */
+    padding: 20px; /* Añadir padding para mayor separación */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.text-titulo {
+    color: #000000; /* Cambia a blanco */
+    font-weight: bold;
+}
+.text-titulo-1 {
+    color: #8675A9; /* Color de título */
+    font-size: 2em; /* Tamaño de fuente más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Sombra de texto */
+}
+.text-subtitulo {
+    color: #6256CA; /* Ejemplo de color azul, puedes cambiarlo al color deseado */
+}
+.text-subtitulo-1 {
+    color: #6256CA; /* Color del subtítulo */
+    font-size: 1.2em; /* Tamaño de fuente ligeramente mayor */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+.text-card-1 {
+    color: #FB773C; /* Color del precio */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+.bg-total{
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente para darle contraste */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bg-total-1 {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente para darle contraste */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 20px; /* Padding adicional */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.bg-card{
+    background-color: #86D293;
+}
+
+.bg-card-1{
+    background-color: #6256CA;
+}
+.bg-card-2{
+    background-color: #180161;
+}
+
+.text-card{
+    color: whitesmoke;
+}
+.carousel-item img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+}
+/* Estilo del botón de compra */
+.btn-buy {
+    background-color: #28a745; /* Verde éxito */
+    color: #ffffff; /* Texto blanco */
+    font-size: 18px; /* Tamaño de fuente mayor */
+    font-weight: bold;
+    padding: 12px 24px; /* Espaciado interno aumentado */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+}
+
+.btn-buy:hover {
+    background-color: #218838; /* Verde más oscuro en hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra en hover */
+}
+
+.btn-buy:active {
+    background-color: #1e7e34; /* Verde aún más oscuro en clic */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra en clic */
+}
+
+
+.bg-image{
+    background-image: url('https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75'); /* Ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+
+}
+.texto{
+    size: 50cm;
+}
+/*****************************************************************************************/

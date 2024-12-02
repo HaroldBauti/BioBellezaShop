@@ -1,0 +1,131 @@
+<body bg-image>
+    <nav class="navbar navbar-expand-lg navbar-light bg-total py-1 align-items-center">
+        <div class="container px-5 " style="align-items: center;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-4 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['']">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/Nosotros']">NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link"[routerLink]="['/Tienda']">TIENDA</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <header class="hero-banner">
+        <div class="container">
+            <h1>Bienvenido a BioBelleza Shop</h1>
+            <p>Productos de belleza orgánicos y naturales para cuidar tu piel y el planeta.</p>
+            <a [routerLink]="['/Tienda']" class="btn btn-success btn-lg">Explorar Tienda</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Featured Products Section -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Productos Destacados</h2>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mascarilla Facial Orgánica</h5>
+                            <p class="card-text text-primary fw-bold">$18.00</p>
+                            <a href="#" class="btn btn-success">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sérum Hidratante Natural</h5>
+                            <p class="card-text text-primary fw-bold">$25.00</p>
+                            <a href="#" class="btn btn-success">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Champú Natural Reparador</h5>
+                            <p class="card-text text-primary fw-bold">$20.00</p>
+                            <a href="#" class="btn btn-success">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-5 bg-light">
+            <h2 class="text-center mb-4">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <p>"¡Me encantan los productos de BioBelleza Shop! Mi piel nunca había estado tan saludable."</p>
+                        <h5 class="fw-bold">- Ana G.</h5>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <p>"El champú natural es increíble. Mi cabello se siente más suave y brillante."</p>
+                        <h5 class="fw-bold">- Carlos M.</h5>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <p>"Me encanta que los productos sean ecológicos y respetuosos con el medio ambiente."</p>
+                        <h5 class="fw-bold">- Sofía L.</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="text-center py-5">
+            <h2 class="mb-3">Descubre Nuestra Colección Completa</h2>
+            <p>Desde cuidado facial hasta tratamientos capilares, tenemos algo especial para todos.</p>
+            <a [routerLink]="['/Tienda']" class="btn btn-success btn-lg">Ir a la Tienda</a>
+        </section>
+    </main>
+
+    <!--<div class="flex-shrink-0 bg-image justify-content-center">
+        <div class="bg-total py-1 px-3 d-flex justify-content-between align-items-center">
+            <span style="font-weight: bold;">UBICACIÓN: CAJAMARCA-PERÚ</span>
+            <div>
+                <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-total py-1 align-items-center">
+            <div class="container px-5 " style="align-items: center;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-4 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" [routerLink]="['']">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" [routerLink]="['Nosotros']">NOSOTROS</a></li>
+                        <li class="nav-item"><a class="nav-link"[routerLink]="['Tienda']">TIENDA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex justify-content-center align-items-center vh-100 text-center">
+            <div>
+                <h1 class="fw-bold fst-italic display-1">BioBelleza Shop</h1>
+                <p class="fst-italic display-3">“La cerámica que embellece tu vida”</p>
+                <p class="fw-bold">Los mejores productos que encontrarás a un buen precio.</p>
+            </div>
+        </div>
+    </div>-->
+</body>

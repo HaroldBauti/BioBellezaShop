@@ -1,0 +1,22 @@
+<div class="container">
+    <h2 class="my-4">Carrito de Compras</h2>
+  
+    <!-- Mostrar el resumen del carrito -->
+    <div class="alert alert-info" *ngIf="cartCount > 0">
+      <strong>Carrito</strong> - {{ cartCount }} artículos - $ {{ cartTotal.toFixed(2) }}
+    </div>
+  
+    <!-- Si el carrito está vacío -->
+    <div class="alert alert-warning" *ngIf="cartCount === 0">
+      <strong>¡Tu carrito está vacío!</strong>
+    </div>
+  
+    <!-- Mostrar los productos del carrito -->
+    <div class="list-group" *ngIf="cartCount > 0">
+      <div class="list-group-item" *ngFor="let item of cartService.getCartItems()">
+        <h5>{{ item.nombre }}</h5>
+        <p>$ {{ item.precio }}</p>
+      </div>
+    </div>
+  </div>
+  
